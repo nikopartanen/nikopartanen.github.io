@@ -3,42 +3,42 @@
 <title type="text"></title>
 <subtitle type="text">Site for some stuff.</subtitle>
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="http://nikopartanen.github.io/feed.xml" />
-<link rel="alternate" type="text/html" href="http://nikopartanen.github.io" />
-<updated>2014-08-11T20:00:44+02:00</updated>
-<id>http://nikopartanen.github.io/</id>
+<link rel="self" type="application/atom+xml" href="/feed.xml" />
+<link rel="alternate" type="text/html" href="" />
+<updated>2014-08-11T20:41:39+02:00</updated>
+<id>/</id>
 <author>
   <name>Niko Partanen</name>
-  <uri>http://nikopartanen.github.io/</uri>
+  <uri>/</uri>
   <email>nikotapiopartanen@gmail.com</email>
 </author>
 
 
 <entry>
   <title type="html"><![CDATA[Blogging with <br/> GitHub and Jekyll]]></title>
-  <link rel="alternate" type="text/html" href="http://nikopartanen.github.io/jekyll" />
-  <id>http://nikopartanen.github.io/jekyll</id>
+  <link rel="alternate" type="text/html" href="/jekyll" />
+  <id>/jekyll</id>
   <published>2014-08-07T00:00:00+02:00</published>
   <updated>2014-08-07T00:00:00+02:00</updated>
   <author>
     <name>Niko Partanen</name>
-    <uri>http://nikopartanen.github.io</uri>
+    <uri></uri>
     <email>nikotapiopartanen@gmail.com</email>
   </author>
-  <content type="html">&lt;p&gt;Our project does need a website. I mean, all projects do have them. Though it is not always clear what do we need from a website. We already had several discussions about this. Something like a blog could be good, but it cannot look like typical blog with two posts every year. Basically what we need is a site where can store description about our project and about our work, which can be updated easily but which would not necessarily be within traditional blog-framework.&lt;/p&gt;
+  <content type="html">&lt;p&gt;Our project does need a website. All projects do have them. Though it is not always clear what do we need it for. We already had several discussions about this in our research group. Basically what we need is a site where can store description about our project and about our work, which can be updated easily but which would not necessarily be within traditional blog-framework.&lt;/p&gt;
 
 &lt;h2 id=&quot;whats-wrong-with-the-alternatives&quot;&gt;What’s wrong with the alternatives&lt;/h2&gt;
 
-&lt;p&gt;Not that much, to be honest! I have been using both Wordpress and Blogger before and liked them. However, there were several things that annoyed me.&lt;/p&gt;
+&lt;p&gt;Not that much, to be honest! I have been using both Wordpress and Blogger before and liked them. However, there were several things that make them less than ideal.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;The need to sign in and use some browser in-built thing for text processing&lt;/li&gt;
+  &lt;li&gt;The need to sign in and use browser for writing&lt;/li&gt;
   &lt;li&gt;The necessity of still writing or editing posts in HTML in order to make them look good&lt;/li&gt;
-  &lt;li&gt;Where the things go? Many of my blogposts are something I could reuse while writing other things later, but do I have to go to the blog itself to get back my original text?&lt;/li&gt;
-  &lt;li&gt;Many things we write have a semi-scientific feel in them at least, so is there any way to use citations from our .bib bibliography while blogging?&lt;/li&gt;
+  &lt;li&gt;Where is the original text? Many of good blogposts are something that could be reused while writing other things later, but do I have to go to the blog itself to get back my original text?&lt;/li&gt;
+  &lt;li&gt;Many things we write have at least a semi-scientific feel in them, so could there be a way to use citations from our bibliography while blogging?&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;But for now I think I have found a very good alternative for us.&lt;/p&gt;
+&lt;p&gt;But I think I have found a very good alternative for us.&lt;/p&gt;
 
 &lt;h2 id=&quot;github-pages--jekyll&quot;&gt;Github Pages &amp;amp; Jekyll&lt;/h2&gt;
 
@@ -68,8 +68,8 @@ Markdown has a very good ratio for amount of markup language and content. And it
 &lt;pre&gt;&lt;code&gt;.
 ├── _config.yml
 ├── _drafts
-|   ├── social_variation_in_Komi.md
-|   └── Nikos_PhD
+|   ├── all_social_variation_in_Komi.md
+|   └── Niko&#39;s_ready_dissertation.md
 ├── _includes
 |   ├── footer.html
 |   └── header.html
@@ -92,21 +92,27 @@ So basically command&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;br /&gt;
-In the beginning of this structure converts the whole thing into HTML in the _site folder.&lt;/p&gt;
+In the beginning of this structure converts the whole thing into HTML in the _site folder. This can be used locally, and with command&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://nikopartanen.github.io/jekyll&quot;&gt;Blogging with <br/> GitHub and Jekyll&lt;/a&gt; was originally published by Niko Partanen at &lt;a href=&quot;http://nikopartanen.github.io&quot;&gt;&lt;/a&gt; on August 07, 2014.&lt;/p&gt;</content>
+&lt;pre&gt;&lt;code&gt;jekyll serve --drafts
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br /&gt;
+It even takes into account all draft files. Otherwise the posts in _drafts folder are ignored.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/jekyll&quot;&gt;Blogging with <br/> GitHub and Jekyll&lt;/a&gt; was originally published by Niko Partanen at &lt;a href=&quot;&quot;&gt;&lt;/a&gt; on August 07, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[SUS: Digitoidut aineistot]]></title>
-  <link rel="alternate" type="text/html" href="http://nikopartanen.github.io/SUS-digitoidut-aineistot" />
-  <id>http://nikopartanen.github.io/SUS-digitoidut-aineistot</id>
+  <link rel="alternate" type="text/html" href="/SUS-digitoidut-aineistot" />
+  <id>/SUS-digitoidut-aineistot</id>
   <published>2014-08-07T00:00:00+02:00</published>
   <updated>2014-08-07T00:00:00+02:00</updated>
   <author>
     <name>Niko Partanen</name>
-    <uri>http://nikopartanen.github.io</uri>
+    <uri></uri>
     <email>nikotapiopartanen@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;Niko Partanen on digitoinut tutkimusprojektin &lt;a href=&quot;http://www.downrivervashka.net&quot;&gt;Down River Vashka&lt;/a&gt; yhteydessä &lt;a href=&quot;http://www.sgr.fi&quot;&gt;Suomalais-Ugrilaisen Seuran&lt;/a&gt; julkaisemia aineistoja komin kielen Udoran murteesta. Projektin aikana tehtiin kenttätöitä tämän saman murteen parissa, minkä takia oli välttämätöntä tutustua jo julkaistuihin materiaaleihin. Suomalaisista tutkijoista tämän murteen parissa ovat työskennelleet erityisesti Yrjö Wichmann sekä Toivo Uotila.&lt;/p&gt;
@@ -138,12 +144,13 @@ In the beginning of this structure converts the whole thing into HTML in the _si
 &lt;p&gt;Trovan käyttöliittymä näyttää tältä:&lt;/p&gt;
 
 &lt;figure&gt;
-	&lt;img src=&quot;http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_c.jpg&quot; /&gt;
+	&lt;img src=&quot;/images/trova1.jpg&quot; /&gt;
 	&lt;figcaption&gt;Trovan käyttöliittymä&lt;/figcaption&gt;
 &lt;/figure&gt;
 
+&lt;p&gt;Merkitsen käyttöliittymän pian selityksiä!&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://nikopartanen.github.io/SUS-digitoidut-aineistot&quot;&gt;SUS: Digitoidut aineistot&lt;/a&gt; was originally published by Niko Partanen at &lt;a href=&quot;http://nikopartanen.github.io&quot;&gt;&lt;/a&gt; on August 07, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;/SUS-digitoidut-aineistot&quot;&gt;SUS: Digitoidut aineistot&lt;/a&gt; was originally published by Niko Partanen at &lt;a href=&quot;&quot;&gt;&lt;/a&gt; on August 07, 2014.&lt;/p&gt;</content>
 </entry>
 
 </feed>

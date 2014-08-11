@@ -6,6 +6,9 @@ author: "Niko Partanen"
 date: "7 Aug 2014"
 output: html_document
 comments: true
+image:
+  feature: elan-example.jpg
+
 ---
 
 Niko Partanen on digitoinut tutkimusprojektin [Down River Vashka](http://www.downrivervashka.net) yhteydessä [Suomalais-Ugrilaisen Seuran](http://www.sgr.fi) julkaisemia aineistoja komin kielen Udoran murteesta. Projektin aikana tehtiin kenttätöitä tämän saman murteen parissa, minkä takia oli välttämätöntä tutustua jo julkaistuihin materiaaleihin. Suomalaisista tutkijoista tämän murteen parissa ovat työskennelleet erityisesti Yrjö Wichmann sekä Toivo Uotila.
@@ -35,7 +38,8 @@ Valitsemalla esimerkiksi arkistonoodin kpv_udora_SFOu on mahdollista klikata lin
 Trovan käyttöliittymä näyttää tältä:
 
 <figure>
-	<img src="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_c.jpg">
+	<img src="/images/trova1.jpg">
 	<figcaption>Trovan käyttöliittymä</figcaption>
 </figure>
 
+Merkitsen käyttöliittymän pian selityksiä!
