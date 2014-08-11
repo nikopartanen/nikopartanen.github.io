@@ -2,7 +2,7 @@ title:
 tagline:          Site for some stuff.
 description:      This site contains things.
 #Comment out url when working locally to resolve base urls correctly
-#url: http://nikopartanen.github.io
+url: http://nikopartanen.github.io
 
 # Owner/author information
 owner:
