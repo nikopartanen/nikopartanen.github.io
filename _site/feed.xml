@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<title type="text"></title>
+<subtitle type="text">Site for some stuff.</subtitle>
+<generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
+<link rel="self" type="application/atom+xml" href="/feed.xml" />
+<link rel="alternate" type="text/html" href="" />
+<updated>2014-08-11T19:42:35+02:00</updated>
+<id>/</id>
+<author>
+  <name>Niko Partanen</name>
+  <uri>/</uri>
+  <email>nikotapiopartanen@gmail.com</email>
+</author>
+
+
+<entry>
+  <title type="html"><![CDATA[Blogging with <br/> GitHub and Jekyll]]></title>
+  <link rel="alternate" type="text/html" href="/jekyll" />
+  <id>/jekyll</id>
+  <published>2014-08-07T00:00:00+02:00</published>
+  <updated>2014-08-07T00:00:00+02:00</updated>
+  <author>
+    <name>Niko Partanen</name>
+    <uri></uri>
+    <email>nikotapiopartanen@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Our project does need a website. I mean, all projects do have them. Though it is not always clear what do we need from a website. We already had several discussions about this. Something like a blog could be good, but it cannot look like typical blog with two posts every year. Basically what we need is a site where can store description about our project and about our work, which can be updated easily but which would not necessarily be within traditional blog-framework.&lt;/p&gt;
+
+&lt;h2 id=&quot;whats-wrong-with-the-alternatives&quot;&gt;What’s wrong with the alternatives&lt;/h2&gt;
+
+&lt;p&gt;Not that much, to be honest! I have been using both Wordpress and Blogger before and liked them. However, there were several things that annoyed me.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The need to sign in and use some browser in-built thing for text processing&lt;/li&gt;
+  &lt;li&gt;The necessity of still writing or editing posts in HTML in order to make them look good&lt;/li&gt;
+  &lt;li&gt;Where the things go? Many of my blogposts are something I could reuse while writing other things later, but do I have to go to the blog itself to get back my original text?&lt;/li&gt;
+  &lt;li&gt;Many things we write have a semi-scientific feel in them at least, so is there any way to use citations from our .bib bibliography while blogging?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But for now I think I have found a very good alternative for us.&lt;/p&gt;
+
+&lt;h2 id=&quot;github-pages--jekyll&quot;&gt;Github Pages &amp;amp; Jekyll&lt;/h2&gt;
+
+&lt;p&gt;Our project is using GitHub to maintain version control between ELAN files. I learned a while ago that GitHub offers also free space for hosting a website. There are many ways to do that, but one of the more intriguing ones was to use tool called &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;. It is a really cool program which I guess basically transforms text from one type to another - in this case languages like Markdown into HTML. I haven’t really learned yet all of it, but the basic idea is that we can have our website template in GitHub and the actual side content is written in Markdown. Jekyll transforms Markdown into articles and blog-posts, and to add new content we just need to write something in an easy and simple text file, run Jekyll and to update our GitHub repository. And the site is running with new content. Immediately.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-markdown&quot;&gt;What is Markdown?&lt;/h2&gt;
+
+&lt;p&gt;Markdown is a simple text formatting syntax which can be easily converted to HTML or to other formats. Actually with &lt;a href=&quot;http://johnmacfarlane.net/pandoc/&quot;&gt;Pandoc&lt;/a&gt; it can be even converted to PDF through LaTeX or then straight to .docx, among many other possibilities! This is very interesting and something to keep an eye on. Markdown is already used in many places, as an example in GitHub and StackOverFlow.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;## This is how one makes a title
+
+Then this comes out as text **this is bold** and *this is italics*.
+
+- This would be a list item
+- And this is another
+
+This is again normal text
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Markdown has a very good ratio for amount of markup language and content. And it is possible to use references from BibTex as well, though I have not yet understood how it exactly works. Still, this makes it a very good tool for writing research reports and summaries. For research papers I suppose one still has to use LaTeX, but there is lots of everyday note taking which doesn’t require that complicated environment.&lt;/p&gt;
+
+&lt;h2 id=&quot;site-structure&quot;&gt;Site structure&lt;/h2&gt;
+
+&lt;p&gt;The site works so that different content is set into different folders. In _layouts folder there are possible layouts, and in YAML header in the beginning of the post one can specify which template is being used.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;.
+├── _config.yml
+├── _drafts
+|   ├── social_variation_in_Komi.md
+|   └── Nikos_PhD
+├── _includes
+|   ├── footer.html
+|   └── header.html
+├── _layouts
+|   ├── default.html
+|   └── post.html
+├── _posts
+|   ├── 2014-08-01-post1.md
+|   └── 2014-08-02-post2.md
+├── _data
+|   └── members.yml
+├── _site
+└── index.html
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br /&gt;
+So basically command&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;jekyll serve
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br /&gt;
+In the beginning of this structure converts the whole thing into HTML in the _site folder.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/jekyll&quot;&gt;Blogging with <br/> GitHub and Jekyll&lt;/a&gt; was originally published by Niko Partanen at &lt;a href=&quot;&quot;&gt;&lt;/a&gt; on August 07, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[SUS: Digitoidut aineistot]]></title>
+  <link rel="alternate" type="text/html" href="/SUS-digitoidut-aineistot" />
+  <id>/SUS-digitoidut-aineistot</id>
+  <published>2014-08-07T00:00:00+02:00</published>
+  <updated>2014-08-07T00:00:00+02:00</updated>
+  <author>
+    <name>Niko Partanen</name>
+    <uri></uri>
+    <email>nikotapiopartanen@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Niko Partanen on digitoinut tutkimusprojektin &lt;a href=&quot;http://www.downrivervashka.net&quot;&gt;Down River Vashka&lt;/a&gt; yhteydessä &lt;a href=&quot;http://www.sgr.fi&quot;&gt;Suomalais-Ugrilaisen Seuran&lt;/a&gt; julkaisemia aineistoja komin kielen Udoran murteesta. Projektin aikana tehtiin kenttätöitä tämän saman murteen parissa, minkä takia oli välttämätöntä tutustua jo julkaistuihin materiaaleihin. Suomalaisista tutkijoista tämän murteen parissa ovat työskennelleet erityisesti Yrjö Wichmann sekä Toivo Uotila.&lt;/p&gt;
+
+&lt;h2 id=&quot;digitointimuoto&quot;&gt;Digitointimuoto&lt;/h2&gt;
+
+&lt;p&gt;Uudet nauhoitetut aineistot on arkistoitu Nijmegenin Max Planck -instituutin arkistoon. Niiden litterointi on tehty ELAN-ohjelmalla, minkä takia myös vanhat aineistot on muutettu tämän ohjelman tuottamaa XML-rakennetta vastaaviksi tiedostoiksi. Työhön kuului painettujen aineistojen digitalisointi tekstitiedostoiksi, niiden oikoluku sekä ELAN-tiedostojen luonti. Tähän formaattiin päädyttiin seuraavista syistä:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Aineiston muuttaminen eri tiedostomuotoihin on helppoa&lt;/li&gt;
+  &lt;li&gt;Uusien ja vanhojen aineistojen vertaaminen on yksinkertaista&lt;/li&gt;
+  &lt;li&gt;Max Planck -instituutin omat hakutoiminnot ovat suoraan käytettävissä&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Käyn tässä dokumentissa yksityiskohtaisesti läpi, kuinka aineistoja voi hyödyntää.&lt;/p&gt;
+
+&lt;h2 id=&quot;arkiston-rakenne&quot;&gt;Arkiston rakenne&lt;/h2&gt;
+
+&lt;p&gt;Arkistoa voi selata tähän tarkoitukseen kehitetyn &lt;a href=&quot;https://corpus1.mpi.nl/ds/imdi_browser/&quot;&gt;IMDI-selaimen&lt;/a&gt; avulla. Selaimen vasemmalla puolella on puumainen rakenne, josta voi avata eri kokoelmia. Nyt käsitellyt Suomalais-Ugrilaisen Seuran aineistot sijaitsevat kohdassa Donated Corpora –&amp;gt; Permic Varieties –&amp;gt; kpv_udora –&amp;gt; 002 Sessions –&amp;gt; kpv_udora_SFOu. Muut kokoelmat sisältävät eri materiaaleja, esimerkiksi kpv_syktyvkar sisältää Niko Partasen Syktyvkarissa tekemiä sosiolingvistisiä haastatteluja, jotka eivät ole tällä hetkellä vapaasti käytettävissä. Kokoelma kpv_izva puolestaan sisältää &lt;a href=&quot;http://www.koneensaatio.fi&quot;&gt;Koneen säätion&lt;/a&gt; parhaillaan tukemassa projektissa käsiteltyjä komin pohjoismurteen aineistoja.&lt;/p&gt;
+
+&lt;p&gt;Arkiston rakenne on siinä mielessä kokeellinen, että se tulee varmasti muuttumaan aineiston määrän kasvaessa. Tavoitteena on, että tulevan kolmen vuoden aikana puhuttujen komiaineistojen koko olisi satoja tuhansia sanoja. Jossain vaiheessa on mietittävä, onko aineisto paras jakaa julkaisijan, murteen, nauhoituspaikan, digitalisointihankkeen vai minkä muuttujan mukaan. Huomautettakoon, että varsinaisesta rakenteesta riippumatta aineiston metadata sisältää kaikki kyseiset tiedot.&lt;/p&gt;
+
+&lt;h2 id=&quot;aineistosta-haku&quot;&gt;Aineistosta haku&lt;/h2&gt;
+
+&lt;p&gt;Arkiston ELAN-tiedostot voi vapaasti ladata omalle tietokoneelleen ja tehdä hakuja ELAN-ohjelmassa. Esittelen kuitenkin hakumenetelmiä, jotka ovat jo valmiina suoraan arkiston sisällä. &lt;/p&gt;
+
+&lt;p&gt;Valitsemalla esimerkiksi arkistonoodin kpv_udora_SFOu on mahdollista klikata linkkiä &lt;strong&gt;Annotation content search&lt;/strong&gt;. Tämä käynnistää Trova-ohjelman, jonka avulla voi tehdä hakuja tiedostoista hyvin samalla tavalla kuin ELAN:in avulla tehtäisiin.&lt;/p&gt;
+
+&lt;p&gt;Trovan käyttöliittymä näyttää tältä:&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;img src=&quot;http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_c.jpg&quot; /&gt;
+	&lt;figcaption&gt;Trovan käyttöliittymä&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;/SUS-digitoidut-aineistot&quot;&gt;SUS: Digitoidut aineistot&lt;/a&gt; was originally published by Niko Partanen at &lt;a href=&quot;&quot;&gt;&lt;/a&gt; on August 07, 2014.&lt;/p&gt;</content>
+</entry>
+
+</feed>
