@@ -3,26 +3,26 @@
 <title type="text"></title>
 <subtitle type="text">Site for some stuff.</subtitle>
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="/feed.xml" />
-<link rel="alternate" type="text/html" href="" />
-<updated>2014-08-11T20:41:39+02:00</updated>
-<id>/</id>
+<link rel="self" type="application/atom+xml" href="http://nikopartanen.github.io/feed.xml" />
+<link rel="alternate" type="text/html" href="http://nikopartanen.github.io" />
+<updated>2014-08-12T15:52:00+02:00</updated>
+<id>http://nikopartanen.github.io/</id>
 <author>
   <name>Niko Partanen</name>
-  <uri>/</uri>
+  <uri>http://nikopartanen.github.io/</uri>
   <email>nikotapiopartanen@gmail.com</email>
 </author>
 
 
 <entry>
   <title type="html"><![CDATA[Blogging with <br/> GitHub and Jekyll]]></title>
-  <link rel="alternate" type="text/html" href="/jekyll" />
-  <id>/jekyll</id>
+  <link rel="alternate" type="text/html" href="http://nikopartanen.github.io/jekyll" />
+  <id>http://nikopartanen.github.io/jekyll</id>
   <published>2014-08-07T00:00:00+02:00</published>
   <updated>2014-08-07T00:00:00+02:00</updated>
   <author>
     <name>Niko Partanen</name>
-    <uri></uri>
+    <uri>http://nikopartanen.github.io</uri>
     <email>nikotapiopartanen@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;Our project does need a website. All projects do have them. Though it is not always clear what do we need it for. We already had several discussions about this in our research group. Basically what we need is a site where can store description about our project and about our work, which can be updated easily but which would not necessarily be within traditional blog-framework.&lt;/p&gt;
@@ -100,22 +100,22 @@ In the beginning of this structure converts the whole thing into HTML in the _si
 &lt;p&gt;&lt;br /&gt;
 It even takes into account all draft files. Otherwise the posts in _drafts folder are ignored.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;/jekyll&quot;&gt;Blogging with <br/> GitHub and Jekyll&lt;/a&gt; was originally published by Niko Partanen at &lt;a href=&quot;&quot;&gt;&lt;/a&gt; on August 07, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://nikopartanen.github.io/jekyll&quot;&gt;Blogging with <br/> GitHub and Jekyll&lt;/a&gt; was originally published by Niko Partanen at &lt;a href=&quot;http://nikopartanen.github.io&quot;&gt;&lt;/a&gt; on August 07, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[SUS: Digitoidut aineistot]]></title>
-  <link rel="alternate" type="text/html" href="/SUS-digitoidut-aineistot" />
-  <id>/SUS-digitoidut-aineistot</id>
+  <link rel="alternate" type="text/html" href="http://nikopartanen.github.io/SUS-digitoidut-aineistot" />
+  <id>http://nikopartanen.github.io/SUS-digitoidut-aineistot</id>
   <published>2014-08-07T00:00:00+02:00</published>
   <updated>2014-08-07T00:00:00+02:00</updated>
   <author>
     <name>Niko Partanen</name>
-    <uri></uri>
+    <uri>http://nikopartanen.github.io</uri>
     <email>nikotapiopartanen@gmail.com</email>
   </author>
-  <content type="html">&lt;p&gt;Niko Partanen on digitoinut tutkimusprojektin &lt;a href=&quot;http://www.downrivervashka.net&quot;&gt;Down River Vashka&lt;/a&gt; yhteydessä &lt;a href=&quot;http://www.sgr.fi&quot;&gt;Suomalais-Ugrilaisen Seuran&lt;/a&gt; julkaisemia aineistoja komin kielen Udoran murteesta. Projektin aikana tehtiin kenttätöitä tämän saman murteen parissa, minkä takia oli välttämätöntä tutustua jo julkaistuihin materiaaleihin. Suomalaisista tutkijoista tämän murteen parissa ovat työskennelleet erityisesti Yrjö Wichmann sekä Toivo Uotila.&lt;/p&gt;
+  <content type="html">&lt;p&gt;Niko Partanen on digitoinut tutkimusprojektin &lt;a href=&quot;http://www.downrivervashka.net&quot;&gt;Down River Vashka&lt;/a&gt; yhteydessä &lt;a href=&quot;http://www.sgr.fi&quot;&gt;Suomalais-Ugrilaisen Seuran&lt;/a&gt; julkaisemia aineistoja komin kielen Udoran murteesta. Projektin aikana tehtiin kenttätöitä tämän saman murteen parissa, minkä takia oli välttämätöntä tutustua jo julkaistuihin materiaaleihin. Suomalaisista tutkijoista tämän murteen parissa ovat työskennelleet erityisesti Yrjö Wichmann sekä T. E. Uotila.&lt;/p&gt;
 
 &lt;h2 id=&quot;digitointimuoto&quot;&gt;Digitointimuoto&lt;/h2&gt;
 
@@ -144,13 +144,71 @@ It even takes into account all draft files. Otherwise the posts in _drafts folde
 &lt;p&gt;Trovan käyttöliittymä näyttää tältä:&lt;/p&gt;
 
 &lt;figure&gt;
-	&lt;img src=&quot;/images/trova1.jpg&quot; /&gt;
+	&lt;img src=&quot;/images/trova-all.jpg&quot; /&gt;
 	&lt;figcaption&gt;Trovan käyttöliittymä&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Merkitsen käyttöliittymän pian selityksiä!&lt;/p&gt;
+&lt;p&gt;Käyn tässä läpi Single Layer Search -haun toiminnan. Multiple Layer Search on hyödyllinen tehtäessä hakuja kattavasti käännettyihin ja glossattuihin aineistoihin, mutta näissä komin materiaaleissa on yleensä vain kominkielinen teksti.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;/SUS-digitoidut-aineistot&quot;&gt;SUS: Digitoidut aineistot&lt;/a&gt; was originally published by Niko Partanen at &lt;a href=&quot;&quot;&gt;&lt;/a&gt; on August 07, 2014.&lt;/p&gt;</content>
+&lt;p&gt;Tästä palkista hakutapaa voi kuitenkin vaihtaa:&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;img src=&quot;/images/trova-layers.jpg&quot; /&gt;
+	&lt;figcaption&gt;Trovan käyttöliittymä&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Sivun yläosassa on kaksi osaa, “History” and “Mode”. History näyttää hakuhistorian, mikä on hyödyllinen eri hakuja toistettaessa. Mode puolestaan määrittelee tarkemmin, kuinka haku toteutetaan. Kuvassa alla on valittuna haun kohteeksi “Annotation”, eritelty, että haussa ei välitetä isoista ja pienistä kirjaimista sekä määritelty haun tavaksi “regular expression.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;img src=&quot;/images/trova-historyandmodes.jpg&quot; /&gt;
+	&lt;figcaption&gt;Trovan historia- ja moodi-valikot&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Regular expression kääntyy suomeksi säännöllisiksi lausekkeiksi. Ne ovat tapa kirjoittaa hakuja siten, että varsinaisten sanojen sijasta haetaan kaikki tietyt ehdot täyttävät esiintymät. Esimerkiksi käyttämäni haku:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\b[А-ЯӦа-яӧі\-]+\b
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Hakee kaikki yksittäiset sanat kominkielisestä tekstistä. \b tarkoittaa säännöllisissä lausekkeissa sanarajaa. Hakasulkujen sisään on määritelty suuret sekä pienet kyrilliset aakkoset välillä а-я. Tämän lisäksi on lisättävä merkit ӧ ja і. Ainoastaan ensimmäisestä tarvitaan isoa kirjainta, sillä komissa sananalkuinen і kirjoitetaan kyrillisellä kirjaimella и.&lt;/p&gt;
+
+&lt;p&gt;Näiden lisäksi on vielä määriteltävä, että haetaan väliviivaa. Sen edellä on kenoviiva, sillä näin kerrotaan haulle, että väliviivalla tarkoitetaan juuri väliviivaa. Kuten esimerkistä näkee, tällä merkillä voidaan myös määritellä hakuryhmiä kuin a-z tai а-я. Väliviiva on lisättävä siitä syystä, että haluan laskea erilaiset sanaliitot yksittäisiksi sanoiksi. Hakasulkujen jälkeen tuleva plus-merkki tarkoittaa, että hakasulkujen sisällä olevien merkkien esiintymiä voi olla useampi, periaatteessa miten monta tahansa, kunnes törmätään uuteen sanarajaan.&lt;/p&gt;
+
+&lt;p&gt;ELAN-tiedostot ovat usein melko monimutkaisia, joten on erikseen valittava mistä osasta tiedostoa haetaan. Käytännössä Single layer search -haussa tarvitaan ehkä useimmiten valintoja “Tier type: orthT” ja “Tier type: wordT”. Näin haetaan joko lauseen tai intonaatiojakson kokoisista yksiköistä, tai sitten pelkistä yksittäisistä sanoista.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;img src=&quot;/images/trova-tiers.jpg&quot; /&gt;
+	&lt;figcaption&gt;ELAN-tierien valinta&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Kohdasta Action voi valita kuinka hakutulos esitetään.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;img src=&quot;/images/trova-concordance.jpg&quot; /&gt;
+	&lt;figcaption&gt;Hakutuloksen näyttötapa&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Esimerkiksi Show Concordance View näyttää jokaisen hakutuloksen esiintymiskontekstissaan.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;img src=&quot;/images/trova-searchresult1.jpg&quot; /&gt;
+	&lt;figcaption&gt;Sanamuodot kontekstissaan&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Kuten kuvasta näkee, on nyt lihavoitujen hakutulosten joukossa jokainen sana siinä järjestyksessä, jossa ne esiintyvät. Pisteet, pilkut ja muut välimerkit ovat jääneet pois. Hakutulos sanoo “Found 8716 hits in 1229 annotations.” Tämä tarkoittaa, että sanoja nyt valitussa aineistossa on 8716. Poistamalla esimerkiksi väliviivan hausta saadaan sanamääräksi 9827, mutta tällöin esimerkiksi кык-суда ‘kaksikerroksinen’ jaetaan sanoiksi кык ja суда. Riippuu jokaisesta itsestään, mikä on milloinkin paras vaihtoehto.&lt;/p&gt;
+
+&lt;p&gt;Seuraavaksi valitsen haun kohteeksi “Tier type: wordT”. Kuten aiemmin mainitsin, hakee tämä ainoastaan yksittäisistä sanoista. Valitsen myös Action-valikon alta “Show Frequency View Sorted by Frequency”. Tämä näyttää löydettyjen sanojen, tässä tapauksessa niiden kaikkien, esiintymismäärän järjestettynä yleisyyden mukaan. Tulos näyttää seuraavalta.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;img src=&quot;/images/trova-searchresult2.jpg&quot; /&gt;
+	&lt;figcaption&gt;Sanamuotojen frekvenssi&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Tulos ei ole mitenkään yllättävä, mutta havainnollistaa hyvin, kuinka monimutkaisemmilla hakukomennoilla erilaisia aineistoja pystyy vertailemaan keskenään. Suomalais-Ugrilaisen Seuran julkaisemien aineistojen lisäksi käytettävissä on noin 7500 sanaa Udoralla kesinä 2012 ja 2013 tehtyjen haastattelujen litterointeja. Myös Kotuksen arkistoista saatuja Erik Vászolyin ja Muusa Vahros-Pertamon nauhoituksia on käytettävissä noin 5500 sanan verran.&lt;/p&gt;
+
+&lt;p&gt;Mainittakoon, että tällä hetkellä ulkomaisten tutkijoiden puheenvuoroista ei ole olemassa sanatason jaottelua. Näin ollen heidän repliikkinsä eivät näy esimerkiksi sanamuotojen frekvenssiä tarkasteltaessa.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nikopartanen.github.io/SUS-digitoidut-aineistot&quot;&gt;SUS: Digitoidut aineistot&lt;/a&gt; was originally published by Niko Partanen at &lt;a href=&quot;http://nikopartanen.github.io&quot;&gt;&lt;/a&gt; on August 07, 2014.&lt;/p&gt;</content>
 </entry>
 
 </feed>

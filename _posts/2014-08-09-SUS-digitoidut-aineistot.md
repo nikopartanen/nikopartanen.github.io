@@ -1,5 +1,5 @@
 ---
-layout: post-sus
+layout: post
 title: "SUS: Digitoidut aineistot"
 description: "Suomalais-Ugrilaisen Seuran luvalla Niko Partanen on digitalisoinut jo julkaistuja komin kielennäytteitä."
 author: "Niko Partanen"
@@ -11,7 +11,7 @@ image:
 
 ---
 
-Niko Partanen on digitoinut tutkimusprojektin [Down River Vashka](http://www.downrivervashka.net) yhteydessä [Suomalais-Ugrilaisen Seuran](http://www.sgr.fi) julkaisemia aineistoja komin kielen Udoran murteesta. Projektin aikana tehtiin kenttätöitä tämän saman murteen parissa, minkä takia oli välttämätöntä tutustua jo julkaistuihin materiaaleihin. Suomalaisista tutkijoista tämän murteen parissa ovat työskennelleet erityisesti Yrjö Wichmann sekä Toivo Uotila.
+Niko Partanen on digitoinut tutkimusprojektin [Down River Vashka](http://www.downrivervashka.net) yhteydessä [Suomalais-Ugrilaisen Seuran](http://www.sgr.fi) julkaisemia aineistoja komin kielen Udoran murteesta. Projektin aikana tehtiin kenttätöitä tämän saman murteen parissa, minkä takia oli välttämätöntä tutustua jo julkaistuihin materiaaleihin. Suomalaisista tutkijoista tämän murteen parissa ovat työskennelleet erityisesti Yrjö Wichmann sekä T. E. Uotila.
 
 ## Digitointimuoto
 
@@ -38,8 +38,65 @@ Valitsemalla esimerkiksi arkistonoodin kpv_udora_SFOu on mahdollista klikata lin
 Trovan käyttöliittymä näyttää tältä:
 
 <figure>
-	<img src="/images/trova1.jpg">
+	<img src="/images/trova-all.jpg">
 	<figcaption>Trovan käyttöliittymä</figcaption>
 </figure>
 
-Merkitsen käyttöliittymän pian selityksiä!
+Käyn tässä läpi Single Layer Search -haun toiminnan. Multiple Layer Search on hyödyllinen tehtäessä hakuja kattavasti käännettyihin ja glossattuihin aineistoihin, mutta näissä komin materiaaleissa on yleensä vain kominkielinen teksti.
+
+Tästä palkista hakutapaa voi kuitenkin vaihtaa:
+
+<figure>
+	<img src="/images/trova-layers.jpg">
+	<figcaption>Trovan käyttöliittymä</figcaption>
+</figure>
+
+Sivun yläosassa on kaksi osaa, "History" and "Mode". History näyttää hakuhistorian, mikä on hyödyllinen eri hakuja toistettaessa. Mode puolestaan määrittelee tarkemmin, kuinka haku toteutetaan. Kuvassa alla on valittuna haun kohteeksi "Annotation", eritelty, että haussa ei välitetä isoista ja pienistä kirjaimista sekä määritelty haun tavaksi "regular expression.
+
+<figure>
+	<img src="/images/trova-historyandmodes.jpg">
+	<figcaption>Trovan historia- ja moodi-valikot</figcaption>
+</figure>
+
+Regular expression kääntyy suomeksi säännöllisiksi lausekkeiksi. Ne ovat tapa kirjoittaa hakuja siten, että varsinaisten sanojen sijasta haetaan kaikki tietyt ehdot täyttävät esiintymät. Esimerkiksi käyttämäni haku:
+
+    \b[А-ЯӦа-яӧі\-]+\b
+
+<br/>
+Hakee kaikki yksittäiset sanat kominkielisestä tekstistä. \\b tarkoittaa säännöllisissä lausekkeissa sanarajaa. Hakasulkujen sisään on määritelty suuret sekä pienet kyrilliset aakkoset välillä а-я. Tämän lisäksi on lisättävä merkit ӧ ja і. Ainoastaan ensimmäisestä tarvitaan isoa kirjainta, sillä komissa sananalkuinen і kirjoitetaan kyrillisellä kirjaimella и.
+
+Näiden lisäksi on vielä määriteltävä, että haetaan väliviivaa. Sen edellä on kenoviiva, sillä näin kerrotaan haulle, että väliviivalla tarkoitetaan juuri väliviivaa. Kuten esimerkistä näkee, tällä merkillä voidaan myös määritellä hakuryhmiä kuin a-z tai а-я. Väliviiva on lisättävä siitä syystä, että haluan laskea erilaiset sanaliitot yksittäisiksi sanoiksi. Hakasulkujen jälkeen tuleva plus-merkki tarkoittaa, että hakasulkujen sisällä olevien merkkien esiintymiä voi olla useampi, periaatteessa miten monta tahansa, kunnes törmätään uuteen sanarajaan.
+
+ELAN-tiedostot ovat usein melko monimutkaisia, joten on erikseen valittava mistä osasta tiedostoa haetaan. Käytännössä Single layer search -haussa tarvitaan ehkä useimmiten valintoja "Tier type: orthT" ja "Tier type: wordT". Näin haetaan joko lauseen tai intonaatiojakson kokoisista yksiköistä, tai sitten pelkistä yksittäisistä sanoista.
+
+<figure>
+	<img src="/images/trova-tiers.jpg">
+	<figcaption>ELAN-tierien valinta</figcaption>
+</figure>
+
+Kohdasta Action voi valita kuinka hakutulos esitetään.
+
+<figure>
+	<img src="/images/trova-concordance.jpg">
+	<figcaption>Hakutuloksen näyttötapa</figcaption>
+</figure>
+
+Esimerkiksi Show Concordance View näyttää jokaisen hakutuloksen esiintymiskontekstissaan.
+
+<figure>
+	<img src="/images/trova-searchresult1.jpg">
+	<figcaption>Sanamuodot kontekstissaan</figcaption>
+</figure>
+
+Kuten kuvasta näkee, on nyt lihavoitujen hakutulosten joukossa jokainen sana siinä järjestyksessä, jossa ne esiintyvät. Pisteet, pilkut ja muut välimerkit ovat jääneet pois. Hakutulos sanoo "Found 8716 hits in 1229 annotations." Tämä tarkoittaa, että sanoja nyt valitussa aineistossa on 8716. Poistamalla esimerkiksi väliviivan hausta saadaan sanamääräksi 9827, mutta tällöin esimerkiksi кык-суда 'kaksikerroksinen' jaetaan sanoiksi кык ja суда. Riippuu jokaisesta itsestään, mikä on milloinkin paras vaihtoehto.
+
+Seuraavaksi valitsen haun kohteeksi "Tier type: wordT". Kuten aiemmin mainitsin, hakee tämä ainoastaan yksittäisistä sanoista. Valitsen myös Action-valikon alta "Show Frequency View Sorted by Frequency". Tämä näyttää löydettyjen sanojen, tässä tapauksessa niiden kaikkien, esiintymismäärän järjestettynä yleisyyden mukaan. Tulos näyttää seuraavalta.
+
+<figure>
+	<img src="/images/trova-searchresult2.jpg">
+	<figcaption>Sanamuotojen frekvenssi</figcaption>
+</figure>
+
+Tulos ei ole mitenkään yllättävä, mutta havainnollistaa hyvin, kuinka monimutkaisemmilla hakukomennoilla erilaisia aineistoja pystyy vertailemaan keskenään. Suomalais-Ugrilaisen Seuran julkaisemien aineistojen lisäksi käytettävissä on noin 7500 sanaa Udoralla kesinä 2012 ja 2013 tehtyjen haastattelujen litterointeja. Myös Kotuksen arkistoista saatuja Erik Vászolyin ja Muusa Vahros-Pertamon nauhoituksia on käytettävissä noin 5500 sanan verran.
+
+Mainittakoon, että tällä hetkellä ulkomaisten tutkijoiden puheenvuoroista ei ole olemassa sanatason jaottelua. Näin ollen heidän repliikkinsä eivät näy esimerkiksi sanamuotojen frekvenssiä tarkasteltaessa.
