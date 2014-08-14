@@ -5,7 +5,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://nikopartanen.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://nikopartanen.github.io" />
-<updated>2014-08-14T13:02:16+02:00</updated>
+<updated>2014-08-14T13:05:14+02:00</updated>
 <id>http://nikopartanen.github.io/</id>
 <author>
   <name>Niko Partanen</name>
@@ -25,7 +25,7 @@
     <uri>http://nikopartanen.github.io</uri>
     <email>nikotapiopartanen@gmail.com</email>
   </author>
-  <content type="html">&lt;p&gt;Our project does need a website. All projects do have them. Though it is not always clear what do we need it for. Should it be stable or constantly updated, if updated, then with what content? We already had some discussions about this in Freiburg. Basically what we need is a site where we have a description about our project and our work, which can be updated easily but which would not necessarily be within traditional blog-framework. As an example, it would be nice to have information about our fieldwork trips in separate pages. We could also have there extract from our bibliography which would have all Komi-related entries, as an example. (I think it could easily sync semi-automatically with our FRibliography.bib.) The data which can be made openly available could be linked there too. As an example, we could make a small announcements every time something new was added to the corpus in Nijmegen, as otherwise no one will ever find it or use it.&lt;/p&gt;
+  <content type="html">&lt;p&gt;Our project does need a website. All projects do have them. Though it is not always clear what do we need it for. Should it be stable or constantly updated, if updated, then with what content? We already had some discussions about this in Freiburg. Basically what we need is a site where we have a description about our project and our work, which can be updated easily but which would not necessarily be within traditional blog-framework. As an example, it would be nice to have information about our fieldwork trips in separate pages. We could also have there extract from our bibliography which would have all Komi-related entries, as an example. (I think it could easily sync semi-automatically with our FRibliography.bib.) The data which can be made openly available could be linked there too. As an example, we could make a small announcements every time something new was added to the corpus in Nijmegen, since then as many people as possible would know them and make use of them.&lt;/p&gt;
 
 &lt;h2 id=&quot;whats-wrong-with-the-alternatives&quot;&gt;What’s wrong with the alternatives&lt;/h2&gt;
 
