@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text"></title>
-<subtitle type="text">Site for some stuff.</subtitle>
+<subtitle type="text">testsite</subtitle>
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://nikopartanen.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://nikopartanen.github.io" />
-<updated>2014-08-12T15:52:00+02:00</updated>
+<updated>2014-08-14T13:02:16+02:00</updated>
 <id>http://nikopartanen.github.io/</id>
 <author>
   <name>Niko Partanen</name>
@@ -25,30 +25,32 @@
     <uri>http://nikopartanen.github.io</uri>
     <email>nikotapiopartanen@gmail.com</email>
   </author>
-  <content type="html">&lt;p&gt;Our project does need a website. All projects do have them. Though it is not always clear what do we need it for. We already had several discussions about this in our research group. Basically what we need is a site where can store description about our project and about our work, which can be updated easily but which would not necessarily be within traditional blog-framework.&lt;/p&gt;
+  <content type="html">&lt;p&gt;Our project does need a website. All projects do have them. Though it is not always clear what do we need it for. Should it be stable or constantly updated, if updated, then with what content? We already had some discussions about this in Freiburg. Basically what we need is a site where we have a description about our project and our work, which can be updated easily but which would not necessarily be within traditional blog-framework. As an example, it would be nice to have information about our fieldwork trips in separate pages. We could also have there extract from our bibliography which would have all Komi-related entries, as an example. (I think it could easily sync semi-automatically with our FRibliography.bib.) The data which can be made openly available could be linked there too. As an example, we could make a small announcements every time something new was added to the corpus in Nijmegen, as otherwise no one will ever find it or use it.&lt;/p&gt;
 
 &lt;h2 id=&quot;whats-wrong-with-the-alternatives&quot;&gt;What’s wrong with the alternatives&lt;/h2&gt;
 
-&lt;p&gt;Not that much, to be honest! I have been using both Wordpress and Blogger before and liked them. However, there were several things that make them less than ideal.&lt;/p&gt;
+&lt;p&gt;I have been using both Wordpress and Blogspot (or Blogger as it apparently is called now) before and actually liked them. However, there were several things that make them less than ideal.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;The need to sign in and use browser for writing&lt;/li&gt;
-  &lt;li&gt;The necessity of still writing or editing posts in HTML in order to make them look good&lt;/li&gt;
+  &lt;li&gt;The necessity of writing or editing posts in HTML in order to make them look good&lt;/li&gt;
   &lt;li&gt;Where is the original text? Many of good blogposts are something that could be reused while writing other things later, but do I have to go to the blog itself to get back my original text?&lt;/li&gt;
   &lt;li&gt;Many things we write have at least a semi-scientific feel in them, so could there be a way to use citations from our bibliography while blogging?&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;But I think I have found a very good alternative for us.&lt;/p&gt;
+&lt;p&gt;I think I have now found a very good alternative for us.&lt;/p&gt;
 
 &lt;h2 id=&quot;github-pages--jekyll&quot;&gt;Github Pages &amp;amp; Jekyll&lt;/h2&gt;
 
-&lt;p&gt;Our project is using GitHub to maintain version control between ELAN files. I learned a while ago that GitHub offers also free space for hosting a website. There are many ways to do that, but one of the more intriguing ones was to use tool called &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;. It is a really cool program which I guess basically transforms text from one type to another - in this case languages like Markdown into HTML. I haven’t really learned yet all of it, but the basic idea is that we can have our website template in GitHub and the actual side content is written in Markdown. Jekyll transforms Markdown into articles and blog-posts, and to add new content we just need to write something in an easy and simple text file, run Jekyll and to update our GitHub repository. And the site is running with new content. Immediately.&lt;/p&gt;
+&lt;p&gt;Our project is already using GitHub to maintain version control between ELAN files. I learned a while ago that GitHub offers also free space for hosting a website. That’s where this site is not sitting as well. There are many ways to do that, but one of the more interesting ones was to use tool called &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;. It is a really cool program which basically transforms text from one type to another - in this case from languages like Markdown into HTML. I haven’t really learned yet all of it, but the basic idea is that we can have our website template in GitHub and the actual site content is written in Markdown. Jekyll transforms Markdown into articles and blog-posts, and to add new content we just need to write something in an easy and simple text file, run Jekyll and to update our GitHub repository. And the site is running with new content. Immediately.&lt;/p&gt;
 
 &lt;h2 id=&quot;what-is-markdown&quot;&gt;What is Markdown?&lt;/h2&gt;
 
 &lt;p&gt;Markdown is a simple text formatting syntax which can be easily converted to HTML or to other formats. Actually with &lt;a href=&quot;http://johnmacfarlane.net/pandoc/&quot;&gt;Pandoc&lt;/a&gt; it can be even converted to PDF through LaTeX or then straight to .docx, among many other possibilities! This is very interesting and something to keep an eye on. Markdown is already used in many places, as an example in GitHub and StackOverFlow.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;## This is how one makes a title
+### This would be a subtitle
+#### And subsubtitle... I guess it can have six layers in maximum
 
 Then this comes out as text **this is bold** and *this is italics*.
 
@@ -65,11 +67,25 @@ Markdown has a very good ratio for amount of markup language and content. And it
 
 &lt;p&gt;The site works so that different content is set into different folders. In _layouts folder there are possible layouts, and in YAML header in the beginning of the post one can specify which template is being used.&lt;/p&gt;
 
+&lt;p&gt;So a YAML header means just that the post starts with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;---
+layout: post
+title: &quot;Report about Niko&#39;s stuff&quot;
+description: &quot;This summarises topics I explored during this week.&quot;
+author: &quot;Niko Partanen&quot;
+date: &quot;7 Aug 2014&quot;
+---
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br /&gt;
+This is very self-explanatory. First I select which layout I want to use from _layout-folder. Then I give a title, description and some other relevant stuff. If I want the comments to be available I can mark that also into header. However, I guess the header never gets really complicated. The text-files are stored with .md extension into folders _drafts or _posts.  The actual folder and file structure is minimally like this:&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;.
 ├── _config.yml
 ├── _drafts
-|   ├── all_social_variation_in_Komi.md
-|   └── Niko&#39;s_ready_dissertation.md
+|   ├── all_social_and_geographical_variation_in_Komi.md
+|   └── Niko&#39;s_dissertation.md
 ├── _includes
 |   ├── footer.html
 |   └── header.html
@@ -92,13 +108,15 @@ So basically command&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;br /&gt;
-In the beginning of this structure converts the whole thing into HTML in the _site folder. This can be used locally, and with command&lt;/p&gt;
+In the beginning of this structure converts the whole thing into HTML files in the _site folder. And with command&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;jekyll serve --drafts
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;br /&gt;
-It even takes into account all draft files. Otherwise the posts in _drafts folder are ignored.&lt;/p&gt;
+It even takes into account all draft files. Otherwise the posts in _drafts folder are ignored. There is URL-line in the file _config.yml which has to be commented out if we want to see the page correctly on the local server. When the site is sent to GitHub there has to be the GitHub address. I’m not sure how to do it, but it doesn’t seem to be difficult to use also other addresses, so we could have it under Freiburg or Uppsala university website but host it in GitHub. There are plenty of different templates which we can use, I’m personally curious to try them out and learn more about how it works.&lt;/p&gt;
+
+&lt;p&gt;Different themes can be seen &lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;here&lt;/a&gt;. I use currently one called Balzac, but I think we can make any of them work.&lt;/p&gt;
 
   &lt;p&gt;&lt;a href=&quot;http://nikopartanen.github.io/jekyll&quot;&gt;Blogging with <br/> GitHub and Jekyll&lt;/a&gt; was originally published by Niko Partanen at &lt;a href=&quot;http://nikopartanen.github.io&quot;&gt;&lt;/a&gt; on August 07, 2014.&lt;/p&gt;</content>
 </entry>
@@ -115,7 +133,9 @@ It even takes into account all draft files. Otherwise the posts in _drafts folde
     <uri>http://nikopartanen.github.io</uri>
     <email>nikotapiopartanen@gmail.com</email>
   </author>
-  <content type="html">&lt;p&gt;Niko Partanen on digitoinut tutkimusprojektin &lt;a href=&quot;http://www.downrivervashka.net&quot;&gt;Down River Vashka&lt;/a&gt; yhteydessä &lt;a href=&quot;http://www.sgr.fi&quot;&gt;Suomalais-Ugrilaisen Seuran&lt;/a&gt; julkaisemia aineistoja komin kielen Udoran murteesta. Projektin aikana tehtiin kenttätöitä tämän saman murteen parissa, minkä takia oli välttämätöntä tutustua jo julkaistuihin materiaaleihin. Suomalaisista tutkijoista tämän murteen parissa ovat työskennelleet erityisesti Yrjö Wichmann sekä T. E. Uotila.&lt;/p&gt;
+  <content type="html">&lt;p&gt;Niko Partanen on digitoinut tutkimusprojektin &lt;a href=&quot;http://www.downrivervashka.net&quot;&gt;Down River Vashka&lt;/a&gt; yhteydessä &lt;a href=&quot;http://www.sgr.fi&quot;&gt;Suomalais-Ugrilaisen Seuran&lt;/a&gt; julkaisemia aineistoja komin kielen Udoran murteesta. Projektin aikana tehtiin kenttätöitä tämän saman murteen parissa, minkä takia oli välttämätöntä tutustua jo julkaistuihin materiaaleihin. Suomalaisista tutkijoista tämän murteen parissa ovat työskennelleet ainakin Yrjö Wichmann sekä T. E. Uotila.&lt;/p&gt;
+
+&lt;p&gt;Käytännössä Syrjänische Texte III:n teksteistä digitoitiin sivut XXX-XXX. Työ tehtiin Koneen säätiön ja MinoEuRus-projektin rahoituksesta nauttiessa, mutta silti tämä oli muun työn ohessa tehty ylimääräinen toimi. Tämän takia esimerkiksi saksankielisiä käännöksiä ei erikseen skannattu, vaan työskenneltiin valmiiksi saatavilla olleiden skannausten kanssa.&lt;/p&gt;
 
 &lt;h2 id=&quot;digitointimuoto&quot;&gt;Digitointimuoto&lt;/h2&gt;
 
@@ -154,7 +174,7 @@ It even takes into account all draft files. Otherwise the posts in _drafts folde
 
 &lt;figure&gt;
 	&lt;img src=&quot;/images/trova-layers.jpg&quot; /&gt;
-	&lt;figcaption&gt;Trovan käyttöliittymä&lt;/figcaption&gt;
+	&lt;figcaption&gt;Hakutavan vaihto&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Sivun yläosassa on kaksi osaa, “History” and “Mode”. History näyttää hakuhistorian, mikä on hyödyllinen eri hakuja toistettaessa. Mode puolestaan määrittelee tarkemmin, kuinka haku toteutetaan. Kuvassa alla on valittuna haun kohteeksi “Annotation”, eritelty, että haussa ei välitetä isoista ja pienistä kirjaimista sekä määritelty haun tavaksi “regular expression.&lt;/p&gt;
@@ -204,9 +224,9 @@ Hakee kaikki yksittäiset sanat kominkielisestä tekstistä. \b tarkoittaa sää
 	&lt;figcaption&gt;Sanamuotojen frekvenssi&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Tulos ei ole mitenkään yllättävä, mutta havainnollistaa hyvin, kuinka monimutkaisemmilla hakukomennoilla erilaisia aineistoja pystyy vertailemaan keskenään. Suomalais-Ugrilaisen Seuran julkaisemien aineistojen lisäksi käytettävissä on noin 7500 sanaa Udoralla kesinä 2012 ja 2013 tehtyjen haastattelujen litterointeja. Myös Kotuksen arkistoista saatuja Erik Vászolyin ja Muusa Vahros-Pertamon nauhoituksia on käytettävissä noin 5500 sanan verran.&lt;/p&gt;
+&lt;p&gt;Tulos ei ole mitenkään yllättävä, mutta havainnollistaa hyvin, kuinka monimutkaisemmilla hakukomennoilla erilaisia aineistoja pystyy vertailemaan keskenään. Suomalais-Ugrilaisen Seuran julkaisemien aineistojen lisäksi käytettävissä on myös Udoralla kesinä 2012 ja 2013 tehtyjen haastattelujen litterointeja. Myös Kotuksen arkistoista saatuja Erik Vászolyin ja Muusa Vahros-Pertamon nauhoituksia on digitoitu.&lt;/p&gt;
 
-&lt;p&gt;Mainittakoon, että tällä hetkellä ulkomaisten tutkijoiden puheenvuoroista ei ole olemassa sanatason jaottelua. Näin ollen heidän repliikkinsä eivät näy esimerkiksi sanamuotojen frekvenssiä tarkasteltaessa.&lt;/p&gt;
+&lt;p&gt;Mainittakoon, että tällä hetkellä ulkomaisten tutkijoiden puheenvuoroista ei ole olemassa sanatason jaottelua. Näin ollen heidän repliikkinsä eivät näy esimerkiksi sanamuotojen frekvenssiä tarkasteltaessa. Aikomuksena on tarkistaa tiedostojen rakennetta lähiaikoina.&lt;/p&gt;
 
   &lt;p&gt;&lt;a href=&quot;http://nikopartanen.github.io/SUS-digitoidut-aineistot&quot;&gt;SUS: Digitoidut aineistot&lt;/a&gt; was originally published by Niko Partanen at &lt;a href=&quot;http://nikopartanen.github.io&quot;&gt;&lt;/a&gt; on August 07, 2014.&lt;/p&gt;</content>
 </entry>

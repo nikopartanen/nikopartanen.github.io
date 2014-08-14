@@ -1,13 +1,13 @@
 title:            
-tagline:          Site for some stuff.
-description:      This site contains things.
+tagline:          testsite
+description:      This is just a test.
 #Comment out url when working locally to resolve base urls correctly
 url: http://nikopartanen.github.io
 
 # Owner/author information
 owner:
   name:           Niko Partanen
-  avatar:         avatar.png
+#  avatar:         avatar.png
   bio:            "Linguist"
   email:          nikotapiopartanen@gmail.com
   twitter:        nikopartanen        
@@ -16,7 +16,7 @@ owner:
   # Plug in your disqus shortname!
 
 tools:
-  standards:      "HTML, SCSS, Jekyll"
+  standards:      "Jekyll"
   software:       "git"
 
 # Links to include in top navigation
@@ -30,7 +30,7 @@ links:
   - title: Niko Partanen
     url: https://www.facebook.com/niko.partanen.3
   - title: CV
-    url: https://www.facebook.com/niko.partanen.3
+#    url: https://www.facebook.com/niko.partanen.3
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones

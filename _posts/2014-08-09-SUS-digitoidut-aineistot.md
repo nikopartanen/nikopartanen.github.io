@@ -11,7 +11,9 @@ image:
 
 ---
 
-Niko Partanen on digitoinut tutkimusprojektin [Down River Vashka](http://www.downrivervashka.net) yhteydessä [Suomalais-Ugrilaisen Seuran](http://www.sgr.fi) julkaisemia aineistoja komin kielen Udoran murteesta. Projektin aikana tehtiin kenttätöitä tämän saman murteen parissa, minkä takia oli välttämätöntä tutustua jo julkaistuihin materiaaleihin. Suomalaisista tutkijoista tämän murteen parissa ovat työskennelleet erityisesti Yrjö Wichmann sekä T. E. Uotila.
+Niko Partanen on digitoinut tutkimusprojektin [Down River Vashka](http://www.downrivervashka.net) yhteydessä [Suomalais-Ugrilaisen Seuran](http://www.sgr.fi) julkaisemia aineistoja komin kielen Udoran murteesta. Projektin aikana tehtiin kenttätöitä tämän saman murteen parissa, minkä takia oli välttämätöntä tutustua jo julkaistuihin materiaaleihin. Suomalaisista tutkijoista tämän murteen parissa ovat työskennelleet ainakin Yrjö Wichmann sekä T. E. Uotila.
+
+Käytännössä Syrjänische Texte III:n teksteistä digitoitiin sivut XXX-XXX. Työ tehtiin Koneen säätiön ja MinoEuRus-projektin rahoituksesta nauttiessa, mutta silti tämä oli muun työn ohessa tehty ylimääräinen toimi. Tämän takia esimerkiksi saksankielisiä käännöksiä ei erikseen skannattu, vaan työskenneltiin valmiiksi saatavilla olleiden skannausten kanssa.
 
 ## Digitointimuoto
 
@@ -48,7 +50,7 @@ Tästä palkista hakutapaa voi kuitenkin vaihtaa:
 
 <figure>
 	<img src="/images/trova-layers.jpg">
-	<figcaption>Trovan käyttöliittymä</figcaption>
+	<figcaption>Hakutavan vaihto</figcaption>
 </figure>
 
 Sivun yläosassa on kaksi osaa, "History" and "Mode". History näyttää hakuhistorian, mikä on hyödyllinen eri hakuja toistettaessa. Mode puolestaan määrittelee tarkemmin, kuinka haku toteutetaan. Kuvassa alla on valittuna haun kohteeksi "Annotation", eritelty, että haussa ei välitetä isoista ja pienistä kirjaimista sekä määritelty haun tavaksi "regular expression.
@@ -97,6 +99,6 @@ Seuraavaksi valitsen haun kohteeksi "Tier type: wordT". Kuten aiemmin mainitsin,
 	<figcaption>Sanamuotojen frekvenssi</figcaption>
 </figure>
 
-Tulos ei ole mitenkään yllättävä, mutta havainnollistaa hyvin, kuinka monimutkaisemmilla hakukomennoilla erilaisia aineistoja pystyy vertailemaan keskenään. Suomalais-Ugrilaisen Seuran julkaisemien aineistojen lisäksi käytettävissä on noin 7500 sanaa Udoralla kesinä 2012 ja 2013 tehtyjen haastattelujen litterointeja. Myös Kotuksen arkistoista saatuja Erik Vászolyin ja Muusa Vahros-Pertamon nauhoituksia on käytettävissä noin 5500 sanan verran.
+Tulos ei ole mitenkään yllättävä, mutta havainnollistaa hyvin, kuinka monimutkaisemmilla hakukomennoilla erilaisia aineistoja pystyy vertailemaan keskenään. Suomalais-Ugrilaisen Seuran julkaisemien aineistojen lisäksi käytettävissä on myös Udoralla kesinä 2012 ja 2013 tehtyjen haastattelujen litterointeja. Myös Kotuksen arkistoista saatuja Erik Vászolyin ja Muusa Vahros-Pertamon nauhoituksia on digitoitu.
 
-Mainittakoon, että tällä hetkellä ulkomaisten tutkijoiden puheenvuoroista ei ole olemassa sanatason jaottelua. Näin ollen heidän repliikkinsä eivät näy esimerkiksi sanamuotojen frekvenssiä tarkasteltaessa.
+Mainittakoon, että tällä hetkellä ulkomaisten tutkijoiden puheenvuoroista ei ole olemassa sanatason jaottelua. Näin ollen heidän repliikkinsä eivät näy esimerkiksi sanamuotojen frekvenssiä tarkasteltaessa. Aikomuksena on tarkistaa tiedostojen rakennetta lähiaikoina.
