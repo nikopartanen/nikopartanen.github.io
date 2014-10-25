@@ -1,22 +1,28 @@
----
-layout: post-no-feature
-title: Transcriptions
-description: "I need to create transliterations from transcriptions all the time. I think it doesn't really matter if my data is in Finno-Ugric transcription, IPA, cyrillic or in –ù–∞—É—á–Ω”ß–π –ö–æ–º–∏ –¢—Ä–∞–Ω—Å–∫—Ä–∏–ø—Ü–∏—è. I think this is irrelevant in almost all cases. But all data has to be in one same system. How convert them to that, I kept asking. The answer was to learn some programming language, in this case Perl."
-category: articles
-tags: [Perl, ELAN]
----
+Korpuksemme
+===
 
-I must confess that I never really learned Perl. I've been learning it just to the point that it works for me. I understand that for more elaborate use I would need to actually understand what it does and why.
+Minua pyydettiin kirjoittamaan s‰hkˆposti. Mutta s‰hkˆpostit ovat niin vaivalloisia ja vaikeita k‰ytt‰‰, unohtuvat aina ja j‰‰v‰t milloin kesken, milloin vastaamatta. Ajattelinkin muotoilla ajatukseni t‰llaiseen s‰ilyv‰mp‰‰n muotoon, jonka voin sitten joskus muotoilla esimerkiksi blogitekstiksi.
 
-In Finno-Ugric linguistics there is every now and then discussion about which transliteration system one should use. Traditionally we have been using Finno-Ugric transcription system, but there are some problems with it, mainly the lack of full Unicode support for all characters. However, this is a rather small problem in the end, as 99% of characters we need, I would say, seem to be supported.
+Sain kuulla, ett‰ Mariaa kiinnostaisi k‰ytt‰‰ korpuksiamme kandintyˆss‰‰n. T‰m‰ on todella hienoa. Olen itse jo muutaman vuoden kyh‰nnyt ja valmistellut erilaisia komin aineistoja, usein viel‰ erilaisista hyvist‰ apurahoista samalla nauttien. Olen joskus myˆs erilaisissa loppuraporteissa esitt‰nyt, ett‰ t‰llaisten kieliaineiston varsinainen arvo mitataan sill‰, paljonko niihin ajan mittaan viitataan. Hieman samoin kuin varsinaisen tutkimuksenkin kanssa, tyˆn arvo ei v‰ltt‰m‰tt‰ n‰y heti. Se ei myˆsk‰‰n n‰y suoraan siit‰, ett‰ aineistosta haetaan ja sit‰ k‰ytet‰‰n, vaan ehk‰ kuitenkin tieteellisen k‰ytˆn pit‰isi n‰ky‰ juuri viittauksissa arkistoituun aineistoon. N‰in ollen olen hyvin iloinen, jos joku haluaa k‰ytt‰‰ aineistoa. 
 
-I guess the real problem here is that I don't believe the students of Finno-Ugristics learn anymore how to do a really exact and fine transcriptions. I just got my MA, and the amount of obligatory transcription exercises during my studies was so small that it would had not give very much background to handle real transcription tasks. I've been involved in different projects, mainly my own, in which I've ended up to transcribe larger amount of texts. I think I'm developing quite good ear to the variation in Komi dialects. However, I'm not doing either very phonetic analysis, and I'm not sure if anyone does anymore.
+Muualta maailmasta on v‰lill‰ kuulunut, ett‰ n‰m‰ viimeisen kymmenen vuoden aikana arkistoidut digitaaliset aineistot ehk‰ kuitenkin ovat viel‰ alik‰ytettyj‰. Mielest‰ni meill‰ aineistoja kokoavilla on t‰ss‰ suhteessa hieman peiliin katsomista. Olemmeko tehneet tarpeeksi, ett‰ perinteinen  tutkija lˆyt‰‰ materiaalimme, ja viel‰ osaisi niit‰ k‰ytt‰‰? Ehk‰ emme. Olemme huomanneet t‰m‰n projektissamme, ja itse asiassa alkaneet laatia muun muassa ven‰j‰nkielist‰ aineistoa syktyvkarilaisten kollegojemme [wikisivuille](http://wiki.komikyv.ru/index.php/ELAN#.D0.9F.D0.BE.D0.B8.D1.81.D0.BA_.D0.B8.D0.B7_ELAN_.D0.BA.D0.BE.D1.80.D0.BF.D1.83.D1.81). Toki on selv‰‰, ett‰ tietoa tarvitaan viel‰ suomeksikin.
 
-I've heard people arguing that as we have now original high quality recordings we don't need to do phonetic transcriptions for most of the uses we have. This certainly has some truth in it. There are many reasons why we should focus doing phoneme level transcriptions. Here are some of them.
+K‰yt‰nnˆss‰ kyse on aineistoista, joissa on kominkielinen teksti komin nykyortografiaa mukailevalla kirjoitusasulla. Murteelliset muodot on merkitty, mutta ortografian puitteissa. T‰m‰ ei ole t‰ysin ongelmatonta, mutta se myˆs ratkaisee monta ongelmaa. Voin listata ensiksi hyv‰t puolet:
 
-- They are faster to do
-- They can be easily compared to the written language as the level of exactness is more or less the same
-- More exact sound values can always be checked from the recordings
-- Phonetic transcriptions are necessarily relatively subjective as everyone may hear and interpret differently
+- Aineisto on helppolukuista
+- Litterointi on nopeaa
+- Hauissa ei tarvitse ottaa huomioon kaikkea murteellista variaatiota
+- Morfologiaa voi pyrki‰ analysoimaan komin kirjakieleen kehitetyill‰ ohjelmilla
 
-However, the last point is valid also with phonemic transcriptions. Especially 
+Toki ongelmiakin on:
+
+- Allofonien kanssa on pakko tehd‰ kompromisseja
+- Foneettisiin piirteisiin liittyv‰‰ variatiota ei voi suoraan tutkia litteroidusta aineistosta
+- Kyrilliseen ortografiaan on vaikea merkit‰ glossien rajoja
+
+Toisaalta minusta on perusteltua kysy‰, kuinka selv‰‰ linjaa on ylip‰‰t‰‰n noudattaa allofoneja litteroidessa. Eri ihmiset tuppaavat kuulemaan ne hyvin eri tavoin. N‰in ollen voi olla selke‰mp‰‰ vain litteroida ne hieman miten sattuu, ja j‰tt‰‰ oikeaa variaatiota tutkivan sosiolingvistin tyˆksi niiden tarkan laadun selvitt‰minen.
+
+Sosiolingvistiikka t‰n‰‰n
+===
+
+Nyt on eritt‰in hyv‰ aika tehd‰ sosiolingvistist‰ tutkimusta.
